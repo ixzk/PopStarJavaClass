@@ -1,0 +1,23 @@
+package cn.campsg.practical.bubble.entity;
+
+
+public class MovedStar extends Star{
+	private Position nPosition = new Position();
+
+	public MovedStar(){
+		
+	}
+	
+	public MovedStar(Position oldPosition,StarType type,Position newPosition){
+		this.
+	}
+	public Position getnPosition() {
+		return nPosition;
+	}
+
+	public void setnPosition(Position nPosition) {
+		this.nPosition = nPosition;
+	}
+	
+	
+}

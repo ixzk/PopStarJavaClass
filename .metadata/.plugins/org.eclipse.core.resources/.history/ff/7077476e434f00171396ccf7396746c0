@@ -1,0 +1,39 @@
+package cn.campsg.practical.bubble.entity;
+
+
+public class MovedStar extends Star{
+	private Position nPosition = new Position();
+
+	public MovedStar(){
+		
+	}
+	
+	public MovedStar(Position oldPosition,StarType type,Position newPosition){
+		super(new Position(oldPosition.getRow(),oldPosition.getColumn()),type);
+		this.nPosition = newPosition;
+	}
+	
+	public Position getnPosition() {
+		return nPosition;
+	}
+
+	public void setnPosition(Position nPosition) {
+		this.nPosition = nPosition;
+	}
+	
+	public static void main(String[] args) {
+		Position position = new Position(0,0);
+		Position position2 = new Position(1,1);
+		StarType type = StarType.RED;
+		
+		MovedStar star = new MovedStar(position,type,position2);
+		System.out.println("泡泡糖原位置：(" + star.getPosition().getRow() + "," + star.getPosition().getColumn() + ")");
+		System.out.println("泡泡糖移动的目标位置：(" + star.getnPosition().getRow() + "," + star.getnPosition().getColumn() + ")");
+		System.out.println("泡泡糖的颜色为：" + star.getType());
+	}
+	
+	@Override
+	public String toString() {
+		return super.toString() + "\nnew position: " + nPosition.toString();
+	}
+}

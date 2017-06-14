@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;cn.campsg.practical.bubble.entity&apos; to &apos;PRJ_BU2_JAVA_002/src&apos;&#x0A;- Original project: &apos;PRJ_BU2_JAVA_001&apos;&#x0A;- Destination element: &apos;PRJ_BU2_JAVA_002/src&apos;&#x0A;- Original element: &apos;PRJ_BU2_JAVA_001/src/cn.campsg.practical.bubble.entity&apos;&#x0A;- Update references to refactored element" description="Move package" destination="=PRJ_BU2_JAVA_002/src" element1="/src&lt;cn.campsg.practical.bubble.entity" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1497233618104" version="1.0"/>
+</session>

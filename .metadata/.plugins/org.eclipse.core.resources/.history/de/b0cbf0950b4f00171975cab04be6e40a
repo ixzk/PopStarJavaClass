@@ -1,0 +1,8 @@
+package cn.campsg.practical.bubble.entity;
+
+public class Position {
+	private int row;
+	private int column;
+	
+	
+}
