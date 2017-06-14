@@ -1,0 +1,13 @@
+package cn.campsg.practical.bubble.service;
+
+import cn.campsg.practical.bubble.entity.Score;
+
+public class Configuration {
+	public final static String FILE_PATH = "score.conf";
+
+	Score score = new Score();
+	
+	public Score getScore(){
+		return score;
+	}
+}

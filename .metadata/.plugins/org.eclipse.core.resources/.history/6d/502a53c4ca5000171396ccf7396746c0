@@ -1,0 +1,25 @@
+package cn.campsg.practical.bubble.service;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import cn.campsg.practical.bubble.entity.Score;
+
+public class Configuration {
+	public final static String FILE_PATH = "score.conf";
+
+	Score score = null;
+	
+	public Configuration() {
+		score = new Score();
+		//获取配置文件的路径
+		InputStream scoreFile = getClass().getClassLoader().getResourceAsStream(FILE_PATH);
+		//将InputStream对象转换成BufferedReader对象，然后读取配置文件
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(scoreFile));
+	}
+	
+	public Score getScore(){
+		return score;
+	}
+}
