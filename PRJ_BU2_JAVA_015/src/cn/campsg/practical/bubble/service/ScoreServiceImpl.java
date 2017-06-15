@@ -86,9 +86,7 @@ public class ScoreServiceImpl implements ScoreService {
 	@Override
 	public int getScoreByStars(int stars) {
 		/***********PRJ-BU2-JAVA-015 Task1 ¡¾1/3 Start¡¿ ***********/
-		
-		
-		return 0;
+		return LOWER_SCORE * stars * stars;
 		/***********PRJ-BU2-JAVA-015 Task1 ¡¾1/3 End¡¿ *************/
 	}
 
