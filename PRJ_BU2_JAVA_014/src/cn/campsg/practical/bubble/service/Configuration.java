@@ -9,14 +9,14 @@ import java.io.InputStreamReader;
 import cn.campsg.practical.bubble.entity.Score;
 
 public class Configuration {
-	public final static String FILE_PATH = "score.conf";
+	public final static String FILE_NAME = "score.conf";
 
 	Score score = null;
 	
 	public Configuration() {
 		score = new Score();
 		//获取配置文件的路径
-		InputStream scoreFile = getClass().getClassLoader().getResourceAsStream(FILE_PATH);
+		InputStream scoreFile = getClass().getClassLoader().getResourceAsStream(FILE_NAME);
 		//将InputStream对象转换成BufferedReader对象，然后读取配置文件
 		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(scoreFile));
 		
