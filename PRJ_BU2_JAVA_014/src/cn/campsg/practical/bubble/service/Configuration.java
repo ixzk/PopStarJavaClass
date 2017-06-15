@@ -11,7 +11,7 @@ import cn.campsg.practical.bubble.entity.Score;
 public class Configuration {
 	public final static String FILE_NAME = "score.conf";
 
-	Score score = null;
+	private Score score = null;
 	
 	public Configuration() {
 		score = new Score();
